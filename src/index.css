@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+body {
   font-family: "Saira", sans-serif;
 }
 
@@ -17,12 +17,12 @@
   --color-purple: #3b82fc;
 }
 
-.typewriter {
+/* .typewriter {
   overflow: hidden;
-  border-right: 1px solid #8b5cfc;
+  border-right: 2px solid #8b5cfc;
   white-space: nowrap;
   width: 0;
-  animation: typing 3s steps(20, end) forwards, blink-caret 0.75s step-end 4;
+  animation: typing 3s steps(25, end) forwards, blink-caret 0.75s step-end 4;
 }
 
 @keyframes typing {
@@ -30,7 +30,7 @@
     width: 0;
   }
   to {
-    width: 15ch;
+    width: 17ch;
   }
 }
 
@@ -42,4 +42,4 @@
   50% {
     border-color: #885cfc;
   }
-}
+} */

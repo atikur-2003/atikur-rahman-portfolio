@@ -63,10 +63,10 @@ const Navbar = () => {
   return (
     <nav className="fixed  w-full top-0 z-50 bg-black/95 backdrop-blur-xl px-4 md:px-10 lg:px-20 py-4 border-b border-gray-700/50 shadow-2xl shadow-gray-900/50">
       <div className="flex items-center justify-between">
-        <div className="text-white">
+        <div className="">
           <a href="/" className=" flex items-center gap-2">
             <FaCode size={30} className="text-purple-400" />
-            <span className="text-2xl font-bold">Atikur</span>
+            <span className="text-2xl font-bold text-gray-300">Atikur</span>
           </a>
         </div>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
         </div>
 
         {/* mobile screen menubar */}
-        <div className="text-white md:hidden">
+        <div className="text-gray-300 md:hidden border border-gray-600 rounded-full p-2">
           {menubar ? (
             <FaXmark onClick={() => setMenubar(!menubar)} size={30} />
           ) : (
