@@ -12,7 +12,7 @@ const Navbar = () => {
       <a
         onClick={() => setMenubar(!menubar)}
         href="#home"
-        className="relative font-medium transition-all duration-300 text-gray-300 hover:text-purple-500 group"
+        className="relative font-semibold transition-all duration-300 text-gray-300 hover:text-purple-500 group"
       >
         Home
         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -20,7 +20,7 @@ const Navbar = () => {
       <a
         onClick={() => setMenubar(!menubar)}
         href="#about"
-        className="relative font-medium transition-all duration-300 text-gray-300 hover:text-purple-500 group"
+        className="relative font-semibold transition-all duration-300 text-gray-300 hover:text-purple-500 group"
       >
         About
         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -28,7 +28,7 @@ const Navbar = () => {
       <a
         onClick={() => setMenubar(!menubar)}
         href="#skills"
-        className="relative font-medium transition-all duration-300 text-gray-300 hover:text-purple-500 group"
+        className="relative font-semibold transition-all duration-300 text-gray-300 hover:text-purple-500 group"
       >
         Skills
         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -36,7 +36,7 @@ const Navbar = () => {
       <a
         onClick={() => setMenubar(!menubar)}
         href="#education"
-        className="relative font-medium transition-all duration-300 text-gray-300 hover:text-purple-500 group"
+        className="relative font-semibold transition-all duration-300 text-gray-300 hover:text-purple-500 group"
       >
         Education
         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -44,7 +44,7 @@ const Navbar = () => {
       <a
         onClick={() => setMenubar(!menubar)}
         href="#projects"
-        className="relative font-medium transition-all duration-300 text-gray-300 hover:text-purple-500 group"
+        className="relative font-semibold transition-all duration-300 text-gray-300 hover:text-purple-500 group"
       >
         Projects
         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -52,7 +52,7 @@ const Navbar = () => {
       <a
         onClick={() => setMenubar(!menubar)}
         href="#contact"
-        className="relative font-medium transition-all duration-300 text-gray-300 hover:text-purple-500 group"
+        className="relative font-semibold transition-all duration-300 text-gray-300 hover:text-purple-500 group"
       >
         Contact
         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
@@ -66,12 +66,12 @@ const Navbar = () => {
         <div className="">
           <a href="/" className=" flex items-center gap-2">
             <FaCode size={30} className="text-purple-400" />
-            <span className="text-2xl font-bold text-gray-300">Atikur</span>
+            <span className="text-3xl font-bold text-gray-300">Atikur</span>
           </a>
         </div>
 
         {/* desktop menu */}
-        <div className="hidden md:flex space-x-7">{navLinks}</div>
+        <div className="hidden md:flex space-x-9">{navLinks}</div>
 
         {/* desktop resume button */}
         <div className="hidden lg:block">

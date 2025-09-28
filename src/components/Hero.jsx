@@ -20,7 +20,7 @@ const Hero = () => {
           viewport={{ once: true }}
           className="text-white"
         >
-          <h3 className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r  from-purple-400 via-pink-400 to-cyan-400 tracking-[0.3em] uppercase mb-6 animate-pulse">
+          <h3 className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r  from-purple-400 via-pink-400 to-cyan-400 tracking-[0.3em] uppercase mb-6 animate-pulse">
             ✦ Welcome to my portfolio ✦
           </h3>
           <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-gray-300">
