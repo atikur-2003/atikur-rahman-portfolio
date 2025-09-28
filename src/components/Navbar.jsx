@@ -75,10 +75,14 @@ const Navbar = () => {
 
         {/* desktop resume button */}
         <div className="hidden lg:block">
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white transition">
+          <a
+            href="https://drive.google.com/file/d/1WLrQjzhHeIoLzlzqBqiXhpuTJzeT_xiW/view?usp=drive_link"
+            target="_blank"
+            className="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white transition"
+          >
             <FiDownload />
             Resume
-          </button>
+          </a>
         </div>
 
         {/* mobile screen menubar */}

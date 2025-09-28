@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <motion.div
       id="home"
-      className="min-h-screen  pt-28 pb-24 px-7 md:px-10 lg:px-20 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
+      className="min-h-screen  pt-28 pb-24 px-7 md:px-10 lg:px-20 "
     >
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
         {/* hero content  */}
@@ -64,10 +64,10 @@ const Hero = () => {
           </div>
 
           {/* hero content button */}
-          <div className="flex gap-7">
+          <div className="flex gap-4 md:gap-7">
             <a
-              href=""
-              className="px-4 py-2 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white transition"
+              href="#projects"
+              className="p-2 md:px-4 md:py-2 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white transition"
             >
               View Projects
             </a>
@@ -89,11 +89,22 @@ const Hero = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <img
-            src={profileImage}
-            alt=""
-            className="w-60 lg:w-72 rounded-full"
-          />
+          <div className="relative w-60 h-60 md:w-72 md:h-72 lg:w-90 lg:h-90">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-pink-500">
+              <motion.img
+                animate={{ y: [0, -20, 0] }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "easeInOut",
+                }}
+                src={profileImage}
+                alt=""
+                className="relative object-cover w-60 h-60 md:w-72 md:h-72 lg:w-90 lg:h-90 border-4 border-gray-400 rounded-full z-10"
+              />
+            </div>
+          </div>
         </motion.div>
       </div>
     </motion.div>

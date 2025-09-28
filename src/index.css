@@ -6,6 +6,10 @@
 body {
   font-family: "Saira", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+
+}
 
 @theme {
   --color-dark-100: #1a1a1a;
