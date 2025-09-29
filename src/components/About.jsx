@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="px-4 md:px-10 lg:px-20 py-10 lg:py-24 ">
+    <div id="about" className="px-4 md:px-10 lg:px-20 py-10 lg:py-24">
       <div>
         <h1 className="text-3xl md:text-5xl font-bold text-gray-300 text-center mb-7">
           About <span className="text-purple-500">Me</span>

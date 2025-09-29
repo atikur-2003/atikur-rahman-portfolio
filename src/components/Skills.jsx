@@ -16,7 +16,7 @@ const Skills = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
 
         {/* html card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center gap-3 items-center">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="" className="w-20"/>
@@ -26,7 +26,7 @@ const Skills = () => {
         </div>
 
         {/* css card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <svg
@@ -57,7 +57,7 @@ const Skills = () => {
         </div>
 
         {/* javascript card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="" className="w-20"/>
@@ -67,7 +67,7 @@ const Skills = () => {
         </div>
 
         {/* react card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="" className="w-20"/>
@@ -77,7 +77,7 @@ const Skills = () => {
         </div>
 
         {/* tailwind card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="" className="w-24"/>
@@ -87,7 +87,7 @@ const Skills = () => {
         </div>
 
         {/* bootstrap card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" alt="" className="w-24"/>
@@ -97,7 +97,7 @@ const Skills = () => {
         </div>
 
         {/* node js card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="" className="w-20"/>
@@ -107,7 +107,7 @@ const Skills = () => {
         </div>
 
         {/* express js card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="" className="w-20"/>
@@ -117,7 +117,7 @@ const Skills = () => {
         </div>
 
         {/* mongodb card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="" className="w-20"/>
@@ -127,7 +127,7 @@ const Skills = () => {
         </div>
 
         {/* firebase card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="" className="w-20"/>

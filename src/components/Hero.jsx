@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <motion.div
       id="home"
-      className="min-h-screen  pt-28 pb-24 px-7 md:px-10 lg:px-20 "
+      className="min-h-screen pt-32 pb-24 px-7 md:px-10 lg:px-20 "
     >
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
         {/* hero content  */}
