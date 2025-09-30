@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { FaCode, FaXmark } from "react-icons/fa6";
-import { FcDownload } from "react-icons/fc";
-import { FiDownload } from "react-icons/fi";
 import { IoMenuSharp } from "react-icons/io5";
 
 const Navbar = () => {
@@ -76,11 +74,10 @@ const Navbar = () => {
         {/* desktop resume button */}
         <div className="hidden lg:block">
           <a
-            href="https://drive.google.com/file/d/1WLrQjzhHeIoLzlzqBqiXhpuTJzeT_xiW/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1zehVRlzV3lo0eAU5lfQbGZlYfcGS9Ya3/view?usp=sharing"
             target="_blank"
             className="flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer border-2 border-gray-600 text-gray-300 font-semibold hover:border-gray-400 hover:text-white transition"
           >
-            <FiDownload />
             Resume
           </a>
         </div>
