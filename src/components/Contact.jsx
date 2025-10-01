@@ -1,10 +1,48 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { CgMail } from "react-icons/cg";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSent(false);
+
+    emailjs
+      .sendForm(
+        "service_rz54rmq",
+        "template_lf1lcd8",
+        form.current,
+        "ipBpibNKXu-fXyX_s"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setLoading(false);
+          setSent(true);
+
+          // reset form
+          form.current.reset();
+
+          // reset "Message Sent" back to normal button after few seconds
+          setTimeout(() => {
+            setSent(false);
+          }, 3000);
+        },
+        (error) => {
+          console.log(error.text);
+          setLoading(false);
+        }
+      );
+  };
+
   return (
     <div id="contact" className="py-10 px-7 md:px-10 lg:px-20">
       <div className="text-center text-gray-300 my-7">
@@ -89,7 +127,11 @@ const Contact = () => {
             <p>I'll get back to you as soon as possible</p>
           </div>
           <div className="mt-7">
-            <form className="max-w-3xl mx-auto space-y-6">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="max-w-3xl mx-auto space-y-6"
+            >
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-gray-300 mb-2">
@@ -97,7 +139,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  id="name"
+                  name="name"
                   placeholder="Your name"
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-purple-300 focus:ring-0.5 focus:ring-purple-300 outline-none"
                   required
@@ -111,7 +153,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  id="email"
+                  name="email"
                   placeholder="you@example.com"
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-purple-300 focus:ring-0.5 focus:ring-purple-300 outline-none"
                   required
@@ -124,8 +166,7 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  id="message"
-                  rows="5"
+                  name="message"
                   placeholder="Write your message..."
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-purple-300 focus:ring-0.5 focus:ring-purple-300 outline-none resize-none"
                   required
@@ -135,9 +176,36 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition"
+                disabled={loading}
+                className="w-full cursor-pointer flex items-center justify-center gap-2 p-3 bg-purple-500 hover:bg-purple-700 rounded-lg text-white font-semibold transition duration-300 disabled:opacity-70"
               >
-                Send Message
+                {loading && (
+                  <svg
+                    className="animate-spin h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                    ></path>
+                  </svg>
+                )}
+                {sent
+                  ? "✅ Message Sent!"
+                  : loading
+                  ? "Sending..."
+                  : "Send Message"}
               </button>
             </form>
           </div>
