@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="py-10 px-7 md:px-10 lg:px-20">
-      <div className="text-center text-gray-300 mb-10">
+      <div className="text-center text-gray-300 mb-16">
         <h1 className="text-3xl md:text-5xl font-bold">
           Featured <span className="text-purple-500">Projects</span>
         </h1>
@@ -31,7 +31,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden hover:scale-105 hover:border-blue-400/40 transition-all duration-500"
         >
@@ -109,7 +109,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden hover:scale-105 hover:border-blue-400/40 transition-all duration-500"
         >

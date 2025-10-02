@@ -16,7 +16,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="text-white"
         >
@@ -86,7 +86,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
         >
           <div className="relative w-60 h-60 md:w-72 md:h-72 lg:w-90 lg:h-90">

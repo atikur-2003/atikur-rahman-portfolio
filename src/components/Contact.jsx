@@ -57,9 +57,9 @@ const Contact = () => {
 
       <div className="flex flex-col md:flex-row gap-10 mt-20">
         <motion.div
-          initial={{ opacity: 0, x: -80 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="md:w-1/2 p-5 bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden transition-all duration-500"
         >
@@ -116,9 +116,9 @@ const Contact = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 80 }}
+          initial={{ opacity:0 , x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="md:w-1/2 p-5 bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden transition-all duration-500"
         >

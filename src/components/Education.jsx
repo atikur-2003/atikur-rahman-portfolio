@@ -18,7 +18,7 @@ const Education = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8,  ease: "easeIn" }}
           viewport={{ once: true }}
           className="md:w-1/2 bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-7 rounded-xl border border-gray-400/30 relative transition-all duration-500 hover:border-blue-500/60 group overflow-hidden hover:scale-105"
         >
@@ -51,7 +51,7 @@ const Education = () => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="md:w-1/2 bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-7 rounded-xl border border-gray-400/30 relative transition-all duration-500 hover:border-green-500/60 group overflow-hidden hover:scale-105"
         >
