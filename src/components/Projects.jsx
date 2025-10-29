@@ -23,7 +23,6 @@ import project4Img1 from "../assets/project4-img1.png";
 import project4Img2 from "../assets/project4-img2.png";
 import project4Img3 from "../assets/project4-img3.png";
 
-
 const Projects = () => {
   const project1Images = [project1Img1, project1Img2, project1Img3];
   const project2Images = [project2Img1, project2Img2, project2Img3];
@@ -41,8 +40,8 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Project 1 */}
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 140 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden hover:scale-105 hover:border-blue-400/40 transition-all duration-500"
@@ -119,9 +118,9 @@ const Projects = () => {
 
         {/* Project 2 */}
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          initial={{ opacity: 0, y: 120 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.2 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden hover:scale-105 hover:border-blue-400/40 transition-all duration-500"
         >
@@ -196,9 +195,9 @@ const Projects = () => {
 
         {/* Project 3 */}
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          initial={{ opacity: 0, y: 120 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.4 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden hover:scale-105 hover:border-blue-400/40 transition-all duration-500"
         >
@@ -271,9 +270,9 @@ const Projects = () => {
 
         {/* Project 4 */}
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          initial={{ opacity: 0, y: 120 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.6 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 rounded-xl border border-gray-400/30 overflow-hidden hover:scale-105 hover:border-blue-400/40 transition-all duration-500"
         >
@@ -303,7 +302,8 @@ const Projects = () => {
           <div className="p-5">
             <h3 className="text-2xl font-bold text-gray-300 mb-3">EasyBills</h3>
             <p className="text-gray-400 text-base font-medium mb-6">
-              A utility bills payment website with secure login, bill payments option.
+              A utility bills payment website with secure login, bill payments
+              option.
             </p>
             <div className="text-gray-300 space-x-2 mt-4 text-sm">
               <span className="px-2 py-1 rounded-full border border-blue-500/30 bg-blue-500/20 text-blue-300">
@@ -312,11 +312,10 @@ const Projects = () => {
               <span className="px-2 py-1 rounded-full border border-blue-500/30 bg-blue-500/20 text-blue-300">
                 Tailwind
               </span>
-            
+
               <span className="px-2 py-1 rounded-full border border-blue-500/30 bg-blue-500/20 text-blue-300">
                 Firebase
               </span>
-              
             </div>
             <div className="my-7 flex gap-5">
               <a

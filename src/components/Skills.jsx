@@ -4,8 +4,8 @@ const Skills = () => {
   return (
     <div id="skills" className="py-10 px-7 md:px-10 lg:px-20">
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeIn" }}
         viewport={{ once: true }}
         className="text-center text-gray-300"
@@ -20,15 +20,15 @@ const Skills = () => {
       </motion.div>
 
       {/* skills item section */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn" }}
-        viewport={{ once: true }}
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
-      >
+      <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         {/* html card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center gap-3 items-center">
             <h3>
               <img
@@ -39,10 +39,16 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">HTML 5</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* css card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.1 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <svg
@@ -70,10 +76,16 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">CSS 3</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* javascript card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -84,10 +96,16 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">JavaScript</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* react card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.3 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -98,10 +116,16 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">React</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* tailwind card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.4 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -112,10 +136,16 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">Tailwind CSS</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* bootstrap card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeIn", delay: 0.5 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -126,10 +156,15 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">BootStrap</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* node js card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div 
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn", delay:0.6 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -140,10 +175,15 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">Node.js</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* express js card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div 
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn", delay:0.7 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -154,10 +194,15 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">Express.js</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* mongodb card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div 
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn", delay:0.8 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -168,10 +213,15 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">MongoDB</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* firebase card */}
-        <div className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div 
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn", delay:0.9 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -182,7 +232,7 @@ const Skills = () => {
             </h3>
             <p className="text-gray-300 font-semibold text-xl">Firebase</p>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
