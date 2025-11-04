@@ -45,7 +45,13 @@ const Contact = () => {
 
   return (
     <div id="contact" className="py-10 px-7 md:px-10 lg:px-20">
-      <div className="text-center text-gray-300 my-7">
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+        viewport={{ once: true }}
+        className="text-center text-gray-300 my-7"
+      >
         <h1 className="text-3xl md:text-5xl font-bold  mb-4">
           Contact <span className="text-purple-500">Me</span>
         </h1>
@@ -53,7 +59,7 @@ const Contact = () => {
           Ready to bring your ideas to reality? Let's create something amazing
           together
         </p>
-      </div>
+      </motion.div>
 
       <div className="flex flex-col md:flex-row gap-10 mt-20">
         <motion.div
@@ -116,7 +122,7 @@ const Contact = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity:0 , x: 50 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
           viewport={{ once: true }}

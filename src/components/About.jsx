@@ -11,7 +11,7 @@ const About = () => {
         <motion.p
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="text-gray-300 text-lg max-w-6xl mx-auto text-center mb-5"
         >
@@ -28,7 +28,7 @@ const About = () => {
         <motion.p
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="text-gray-300 text-lg max-w-6xl mx-auto text-center mb-5"
         >
@@ -41,7 +41,7 @@ const About = () => {
         <motion.p
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="text-gray-300 text-lg max-w-6xl mx-auto text-center "
         >

@@ -4,9 +4,9 @@ const Skills = () => {
   return (
     <div id="skills" className="py-10 px-7 md:px-10 lg:px-20">
       <motion.div
-        initial={{ opacity: 0, y: 80 }}
+        initial={{ opacity: 0, y: -80 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn" }}
+        transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
         viewport={{ once: true }}
         className="text-center text-gray-300"
       >
@@ -25,7 +25,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          transition={{ duration: 1, ease: "easeIn" }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
         >
@@ -45,7 +45,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn", delay: 0.1 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.2 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
         >
@@ -82,7 +82,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn", delay: 0.2 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.3 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
         >
@@ -102,7 +102,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn", delay: 0.3 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
         >
@@ -122,7 +122,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn", delay: 0.4 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.5 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
         >
@@ -142,7 +142,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeIn", delay: 0.5 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.6 }}
           viewport={{ once: true }}
           className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
         >
@@ -159,12 +159,13 @@ const Skills = () => {
         </motion.div>
 
         {/* node js card */}
-        <motion.div 
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn", delay:0.6 }}
-        viewport={{ once: true }}
-        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.7 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -178,12 +179,13 @@ const Skills = () => {
         </motion.div>
 
         {/* express js card */}
-        <motion.div 
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn", delay:0.7 }}
-        viewport={{ once: true }}
-        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70  hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -197,12 +199,13 @@ const Skills = () => {
         </motion.div>
 
         {/* mongodb card */}
-        <motion.div 
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn", delay:0.8 }}
-        viewport={{ once: true }}
-        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 0.9 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
@@ -216,12 +219,13 @@ const Skills = () => {
         </motion.div>
 
         {/* firebase card */}
-        <motion.div 
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn", delay:0.9 }}
-        viewport={{ once: true }}
-        className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn", delay: 1 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-gray-900/60 via-gray-800/80 to-black/90 p-5 rounded-2xl flex justify-center border border-gray-500/50 cursor-pointer hover:border-gray-400/70 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 transition-all duration-300"
+        >
           <div className="flex flex-col justify-center items-center gap-3">
             <h3>
               <img
